@@ -62,6 +62,9 @@ export class ProductService {
     scan((acc: Product[], value: Product) => [...acc, value])
   );
 
+  selectedProductSuppliers$ = combineLatest([
+  ])
+
   constructor(private http: HttpClient,
               private productCategoryService: ProductCategoryService,
               private supplierService: SupplierService) { }
